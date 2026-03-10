@@ -22,3 +22,11 @@ jobs:
           file-path: ${{ github.event.inputs.file_path }}
           file-format: csv
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Dry Run Import
+        uses: dsanchezcr/issue-importer-action@v1.0.0
+        with:
+          file-path: data/ado-issues.csv
+          file-format: csv
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: true
