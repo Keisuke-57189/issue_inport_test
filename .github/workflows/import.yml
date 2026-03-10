@@ -22,4 +22,3 @@ jobs:
           file-path: data/add-issues.csv
           file-format: csv
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          dry-run: true
