@@ -9,6 +9,10 @@ on:
         required: true
         default: 'data/add-issues.csv'
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   import:
     runs-on: ubuntu-latest
